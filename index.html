@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency SOS - Quick Emergency Assistance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">🚨</span>
+                <h1>EMERGENCY SOS</h1>
+            </div>
+            <p class="subtitle">Quick Emergency Assistance</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- SOS Section -->
+            <section class="sos-section">
+                <div class="sos-button-container">
+                    <button id="sosButton" class="sos-button">
+                        <span class="sos-text">SOS</span>
+                        <span class="sos-subtext">TAP FOR HELP</span>
+                    </button>
+                </div>
+                
+                <!-- Status Display -->
+                <div class="status-container">
+                    <div class="status-indicator" id="statusIndicator">
+                        <span class="status-dot"></span>
+                        <span class="status-text" id="statusText">Ready</span>
+                    </div>
+                </div>
+
+                <!-- Location Display -->
+                <div class="location-container" id="locationContainer" style="display: none;">
+                    <div class="location-info">
+                        <p class="location-coords" id="locationCoords"></p>
+                        <a href="#" target="_blank" class="maps-link" id="mapsLink">
+                            📍 View on Google Maps
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contacts Section -->
+            <section class="contacts-section">
+                <h2>Emergency Contacts</h2>
+                
+                <!-- Add Contact Form -->
+                <div class="add-contact-form">
+                    <input 
+                        type="text" 
+                        id="contactName" 
+                        placeholder="Contact Name"
+                        class="contact-input"
+                    >
+                    <input 
+                        type="tel" 
+                        id="contactPhone" 
+                        placeholder="Phone Number (+1234567890)"
+                        class="contact-input"
+                    >
+                    <button id="addContactBtn" class="add-contact-btn">
+                        + Add Contact
+                    </button>
+                </div>
+
+                <!-- Contact List -->
+                <div class="contacts-list" id="contactsList">
+                    <p class="no-contacts" id="noContacts">No emergency contacts added yet</p>
+                </div>
+            </section>
+
+            <!-- Info Section -->
+            <section class="info-section">
+                <p class="info-text">
+                    <strong>How it works:</strong> Add emergency contacts, then tap the SOS button. 
+                    Your location will be sent to all your emergency contacts via SMS.
+                </p>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Emergency SOS &copy; 2026 | Stay Safe</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
