@@ -35,4 +35,4 @@ A full-stack Emergency SOS web application that allows users to send their live 
 ### 1️⃣ Clone repository
 
 ```bash
-git clone https://github.com/sharvilwaghmare113-ops/sos-emergency-web-app.git
+git clone https://github.com/sharvildw/sos-emergency-web-app.git
